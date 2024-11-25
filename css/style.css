@@ -55,7 +55,7 @@ header>* {
     justify-content: flex-end;
 }
 
-.header-side a {
+.small-btn {
     background-color: white;
     text-decoration: none;
     color: black;
@@ -83,10 +83,11 @@ header>* {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/jumbo.png);
+    background-size: 100%;
 
     /* DEBUG */
-    background-color: blue;
-    height: 400px;
+    height: 500px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -94,10 +95,38 @@ header>* {
 .jumbo-box {
     width: 50%;
     max-height: 100%;
-    min-height: 320px;
+    min-height: 420px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    /* DEBUG */
-    background-color: pink;
+.jumbo-box>h1 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.jumbo-box>p {
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 30px;
+}
+
+.jumbo-box .btn {
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #22282A;
+    color: white;
+}
+
+.jumbo-box .download-btn {
+    background-color: white;
+    color: black;
 }
 
     /* Regole sezioni centrali */
