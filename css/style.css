@@ -75,6 +75,14 @@ header>* {
         border: 0px;
     }
 
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+}
 
    
     /* Regole jumbo */
@@ -104,13 +112,10 @@ header>* {
 }
 
 .jumbo-box>h1 {
-    font-size: 50px;
     padding-bottom: 40px;
 }
 
 .jumbo-box>p {
-    font-size: 18px;
-    line-height: 150%;
     padding-bottom: 30px;
 }
 
@@ -138,27 +143,35 @@ header>* {
     flex-wrap: wrap;
 
     /* DEBUG */
-    height: 500px;
+    height: 600px;
 }
 
 .img-box {
     width: 45%;
-    height: 80%;
+    padding: 30px auto;
+}
 
-    /* DEBUG */
-    background-color: aqua;
+.text-first .img-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-box img {
+    width: 90%;
+    height: auto;
 }
 
 .text-box {
     width: 25%;
-    height: 80%;
+    padding: 30px auto;
+}
 
-    /* DEBUG */
-    background-color: aquamarine;
+.text-box h1 {
+    padding-bottom: 20px;
 }
 
 .text-first {
-    background-color: gray;
+    background-color: #F6F6F6;
 }
 
     /* Regole sezione finale */
