@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3260E0;
+    background-color: #265EE9;
 }
 
 header>* {
@@ -44,6 +44,8 @@ header>* {
 .header-nav li {
     display: flex;
     align-items: center;
+    padding: 0 20px;
+    font-weight: 400;
 }
 
 .header-nav a {
@@ -66,15 +68,6 @@ header>* {
 
 /* Regole contenuto principale */
 
-    /* DEBUG */
-    section, .nav-menu {
-        border: solid 2px black;
-    }
-
-    .nav-menu section {
-        border: 0px;
-    }
-
 h1 {
     font-size: 48px;
 }
@@ -93,11 +86,7 @@ p {
     align-items: center;
     background-image: url(../img/jumbo.png);
     background-size: 100%;
-
-    /* DEBUG */
-    height: 500px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .jumbo-box {
@@ -141,9 +130,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    /* DEBUG */
-    height: 600px;
+    padding: 100px 0;
 }
 
 .img-box {
@@ -207,55 +194,77 @@ p {
 
 /* Regole footer */
 footer {
-    /* DEBUG */
-    background-color: rgba(0, 0, 0, 0.835);
-    height: 570px;
+    background-color: #23272A;
 }
 
     /* Regole manù navigazione */
 .nav-menu {
     display: flex;
     justify-content: center;
-    padding-top: 1%;
-
-    /* DEBUG */
-    background-color: rgba(0, 0, 0, 0.835);
-    height: 500px;
-    width: 100%
+    padding: 60px 0 40px 0;
 }
-    
+
 .left-nav-menu {
     width: 20%;
     height: 90%;
-    
-    /* DEBUG */
-    background-color: pink;
+}
+
+.left-nav-menu h2 {
+    font-size: 30px;
+    color: #8DA1E2;
+    padding-bottom: 20px;
+}
+
+.language-choice img {
+    height: 15px;
+    width: auto;
+}
+
+.language-choice {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.left-nav-menu {
+    color: white;
+}
+
+.left-nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    padding: 10px;
 }
     
 .right-nav-menu {
     width: 50%;
     height: 90%;
     display: flex;
-    
-    /* DEBUG */
-    background-color: aquamarine;
 }
     
 .right-nav-menu div {
     width: 25%;
-
-    /* DEBUG */
-    border: 1px solid grey;
 }
 
+.right-nav-menu ul {
+    list-style: none;
+    line-height: 200%;
+    color: white;
+    font-weight: 400;
+}
+
+.right-nav-menu ul li:first-child {
+    font-weight: bold;
+    color: #8DA1E2;
+}
+
+    /* Regole parte bassa footer */
 .footer-bottom {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
-    /* DEBUG */
-    height: 70px;
-    width: 100%;
 }
 
 .footer-bottom .footer-container {
@@ -264,16 +273,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* DEBUG */
-    background-color: aquamarine;
+    padding: 40px 0 100px 0;
+    border-top: 1px solid grey;
 }
 
 .footer-container div {
     height: 50%;
-    width: 70px;
+}
 
-    /* DEBUG */
-    background-color: orange;
-    border: solid 1px grey;
+.footer-container .small-btn {
+    background-color: #8DA1E2;
+    color: white;
 }
